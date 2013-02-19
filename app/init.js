@@ -8,7 +8,7 @@ window.debug = true;
 if (debug) console.log('init');
 
 // Require config
-requirejs.config({
+require.config({
     paths: {
         // Libraries
         jquery: '../components/jquery/jquery',
@@ -40,7 +40,7 @@ requirejs.config({
 });
 
 // Start app
-requirejs(
+require(
     [
         'jquery',
         'underscore',
@@ -53,6 +53,23 @@ requirejs(
         if (debug) console.log(Ember);
         if (debug) console.log(Handlebars);
 
-        window.myApp = window.myApp = {};
+        window.MyApp = Ember.Application.create();
+
+        MyApp.Router.map(function() {
+            this.route("index", { path: "/" });
+            this.route("stuff", { path: "/stuff" });
+        });
+
+        MyApp.IndexRoute = Ember.Route.extend({
+            setupController: function(controller, model) {
+                controller.set('content', {name: "Justin"});
+            }
+        });
+
+        MyApp.StuffRoute = Ember.Route.extend({
+            setupController: function(controller, model) {
+                controller.set('content', {that: "stuff"});
+            }
+        });
     }
 );

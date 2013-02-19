@@ -12,6 +12,17 @@
         <script type="text/javascript" data-main="app/init.js" src="components/require/require.js"></script>
     </head>
     <body>
-        <h1>JWin's Ember Boilerplate</h1>
+        <script type="text/x-handlebars">
+            <h1>JWin&apos;s Ember Boilerplate</h1>
+            {{ outlet }}
+        </script>
+        <script type="text/x-handlebars" data-template-name="index">
+            <p>Hi, my name is {{content.name}}</p>
+            {{#linkTo stuff}}An anchor{{/linkTo}}
+        </script>
+        <script type="text/x-handlebars" data-template-name="stuff">
+            <p>This is page: {{ content.that }}</p>
+            {{#linkTo index}}Home{{/linkTo}}
+        </script>
     </body>
 </html>

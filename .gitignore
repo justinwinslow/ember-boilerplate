@@ -1,0 +1,36 @@
+# App Files #
+#################
+
+node_modules
+lib
+components
+
+build
+*.build
+
+# OS Generated Files #
+######################
+
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Packages #
+############
+# git has its own built in compression methods
+# better to unpack and commit the raw source
+
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.w2p
+
+# Executables #
+###############
+

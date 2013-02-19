@@ -1,0 +1,15 @@
+{
+  "name": "ember-boilerplate",
+  "description": "JWin's Ember.js Boilerplate",
+  "version": "0.0.1",
+  "dependencies": {
+    "lodash": null,
+    "jquery": null,
+    "modernizr": null,
+    "ember": null,
+    "text": null,
+    "css": null,
+    "handlebars": null,
+    "require": null
+  }
+}

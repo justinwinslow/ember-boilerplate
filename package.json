@@ -1,0 +1,12 @@
+{
+  "name": "ember-boilerplate",
+  "description": "JWin's Ember.js Boilerplate",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "bower": "",
+    "express": "3.x",
+    "requirejs": "2.x",
+    "less": ""
+  }
+}
